@@ -214,10 +214,25 @@ ul {
   background: #242424;
 }
 
+.pc_builder_button button {
+  background: #0063d1;
+  color: #fff;
+  border: 0;
+  font-weight: 400;
+  padding: 0 20px;
+  min-width: 120px;
+  height: 46px;
+  margin-right: 60px;
+}
+
 .middel_right_info {
   display: flex;
   align-items: center;
   margin-top: 7px;
+}
+.header_wishlist img {
+  height: 27px;
+  width: 27px;
 }
 
 .header_wishlist {

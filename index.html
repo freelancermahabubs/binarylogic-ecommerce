@@ -15,6 +15,7 @@
   <body>
     <div class="header_area">
       <div class="main_header">
+        <!--=================== Header Top start =================== -->
         <div class="header_top">
           <div class="container">
             <div class="row align-items-center">
@@ -56,13 +57,16 @@
             </div>
           </div>
         </div>
+        <!--=================== Header Top end =================== -->
+
+        <!--=================== Header Middle  start =================== -->
 
         <div class="header_middle">
           <div class="container">
             <div class="row align-items-center justify-content-between">
               <div class="col-lg-3 col-md-6">
                 <div class="logo">
-                  <a href="https://www.binarylogic.com.bd" title="Binary Logic">
+                  <a href="#" title="Binary Logic">
                     <span class="homepage_two__log">
                       <svg
                         version="1.0"
@@ -96,37 +100,14 @@
                         id="searchInput"
                         placeholder="Search product..."
                         type="text"
-                        onkeyup="ProductSearch(this)"
                         name="product_name"
                         required="required"
                       />
-                      <button onclick="return mySubmitFunction(event)">
-                        Search
-                      </button>
-                      <div
-                        style="
-                          background: #fff;
-                          display: none;
-                          max-height: 400px;
-                          overflow-y: auto;
-                          margin-top: 5px;
-                          padding: 1rem 10px;
-                          position: absolute;
-                          top: 100%;
-                          left: 0;
-                          right: 0;
-                          z-index: 1000000;
-                          text-align: left;
-                        "
-                        class="ShowProduct"
-                        id="show-preloader"
-                      ></div>
+                      <button>Search</button>
                     </div>
                   </div>
                   <div class="pc_builder_button d-none d-md-block">
-                    <a
-                      href="https://www.binarylogic.com.bd/tools/pc-builder"
-                      title="pc builder"
+                    <a href="#" title="pc builder"
                       ><button type="button">BUILD PC</button></a
                     >
                   </div>
@@ -145,12 +126,14 @@
                     </div>
                     <div class="cart_components">
                       <div class="mini_cart_wrapper">
-                        <a href="https://www.binarylogic.com.bd/cart">
+                        <a href="#">
                           <img
                             style="height: 24px; width: 24px; overflow: hidden"
                             src="https://www.binarylogic.com.bd/images/shopping-bag.png"
                             alt="shopping-cart" />
-                          ৳0.00
+                          <span style="font-size: 16px; color: #000"
+                            >৳0.00</span
+                          >
                           <img
                             style="height: 15px; width: 15px; overflow: hidden"
                             src="https://www.binarylogic.com.bd/images/down-arrow-new.png"
@@ -189,7 +172,8 @@
             </div>
           </div>
         </div>
-
+        <!--=================== Header Middle  end =================== -->
+        <!--=================== Men menu start =================== -->
         <div id="loadWebMenu">
           <div class="main_menu_area">
             <div class="container">
@@ -210,36 +194,14 @@
                             title="PROCESSOR"
                             class="main_menu_new"
                             href="https://www.binarylogic.com.bd/processor"
-                            >PROCESSOR<svg
-                              width="18px"
-                              height="18px"
-                              viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <g>
-                                <path fill="none" d="M0 0h24v24H0z"></path>
-                                <path
-                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
-                                ></path>
-                              </g></svg
-                          ></a>
+                            >PROCESSOR
+                          </a>
                           <ul class="sub_menu">
                             <li>
                               <a
                                 href="https://www.binarylogic.com.bd/intel-processor"
-                                >INTEL<svg
-                                  width="20px"
-                                  height="20px"
-                                  viewBox="0 0 24 24"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <g>
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path
-                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
-                                    ></path>
-                                  </g></svg
-                              ></a>
+                                >INTEL</a
+                              >
                               <ul>
                                 <li>
                                   <a
@@ -1804,6 +1766,7 @@
             </div>
           </div>
         </div>
+        <!--=================== Men menu end =================== -->
       </div>
     </div>
 

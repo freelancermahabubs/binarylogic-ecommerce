@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Logic Ecommerce</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="header_area">
+      <div class="main_header">
+        <div class="header_top">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6">
+                <div class="support_info">
+                  <a class="tphone" href="tel:01727061082"
+                    ><span>01727061082</span></a
+                  ><a class="tphone" href="tel:01911449778"
+                    ><span>01911449778</span></a
+                  ><a class="tphone" href="tel:01611449778"
+                    ><span>01611449778</span></a
+                  ><a class="tphone" href="tel:01733027190"
+                    ><span>01733027190</span></a
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="top_right text-right offer_button">
+                  <ul>
+                    <li>
+                      <a
+                        class="tphone"
+                        href="https://www.binarylogic.com.bd/customerLogin"
+                        title="log in"
+                        >Log In</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="tphone"
+                        href="https://www.binarylogic.com.bd/customerLogin"
+                        title="register"
+                        >Register</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header_middle">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-3 col-md-6">
+                <div class="logo">
+                  <a href="https://www.binarylogic.com.bd" title="Binary Logic">
+                    <span class="homepage_two__log">
+                      <svg
+                        version="1.0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 500.000000 373.000000"
+                        preserveAspectRatio="xMidYMid meet"
+                      >
+                        <g
+                          transform="translate(0.000000,373.000000) scale(0.100000,-0.100000)"
+                          fill="#0101c1"
+                          stroke="none"
+                        >
+                          <path
+                            d="M0 1870 l0 -1860 1638 1 c1628 1 1636 1 1521 19 -550 88 -995 373 -1296 832 -471 717 -378 1680 221 2297 302 310 661 493 1090 556 78 11 -142  13 -1541 14 l-1633 1 0 -1860z"
+                          ></path>
+                          <path
+                            d="M3081 3409 c-260 -55 -535 -201 -737 -392 -257 -243 -416 -542 -476  -891 -26 -158 -22 -427 11 -577 187 -863 1025 -1406 1881 -1219 549 119 998  530 1165 1065 228 729 -91 1508 -765 1868 -134 71 -333 139 -477 162 l-43 7 0 -586 0 -586 -217 2 -218 3 -3 583 c-2 456 -5 582 -15 581 -6 0 -54 -9 -106 -20z"
+                          ></path>
+                        </g>
+                      </svg>
+                      <span class="logo-text">Binary Logic </span>
+                    </span></a
+                  >
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-6">
+                <div class="middel_right">
+                  <div class="search_container_form">
+                    <div class="search_box new_m_searchbox">
+                      <input
+                        id="searchInput"
+                        placeholder="Search product..."
+                        type="text"
+                        onkeyup="ProductSearch(this)"
+                        name="product_name"
+                        required="required"
+                      />
+                      <button onclick="return mySubmitFunction(event)">
+                        Search
+                      </button>
+                      <div
+                        style="
+                          background: #fff;
+                          display: none;
+                          max-height: 400px;
+                          overflow-y: auto;
+                          margin-top: 5px;
+                          padding: 1rem 10px;
+                          position: absolute;
+                          top: 100%;
+                          left: 0;
+                          right: 0;
+                          z-index: 1000000;
+                          text-align: left;
+                        "
+                        class="ShowProduct"
+                        id="show-preloader"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="pc_builder_button d-none d-md-block">
+                    <a
+                      href="https://www.binarylogic.com.bd/tools/pc-builder"
+                      title="pc builder"
+                      ><button type="button">BUILD PC</button></a
+                    >
+                  </div>
+                  <div class="middel_right_info">
+                    <div class="header_wishlist">
+                      <a
+                        href="https://www.binarylogic.com.bd/customerLogin"
+                        aria-label="wishlist"
+                      >
+                        <img
+                          src="https://www.binarylogic.com.bd/images/heart.png"
+                          alt="binary wishlist"
+                        />
+                      </a>
+                      <span class="wishlist_quantity">0</span>
+                    </div>
+                    <div class="cart_components">
+                      <div class="mini_cart_wrapper">
+                        <a href="https://www.binarylogic.com.bd/cart">
+                          <img
+                            style="height: 24px; width: 24px; overflow: hidden"
+                            src="https://www.binarylogic.com.bd/images/shopping-bag.png"
+                            alt="shopping-cart" />
+                          ৳0.00
+                          <img
+                            style="height: 15px; width: 15px; overflow: hidden"
+                            src="https://www.binarylogic.com.bd/images/down-arrow-new.png"
+                            alt="arrow-down"
+                        /></a>
+                        <span class="cart_quantity">0</span>
+
+                        <div class="cart_component">
+                          <div class="mini_cart">
+                            <div class="mini_cart_table">
+                              <div class="cart_total">
+                                <span>Sub total:</span>
+                                <span class="price">৳0.00 </span>
+                              </div>
+                            </div>
+                            <div class="mini_cart_footer">
+                              <div class="cart_button">
+                                <a href="https://www.binarylogic.com.bd/cart"
+                                  >View cart</a
+                                >
+                              </div>
+                              <div class="cart_button">
+                                <a
+                                  href="https://www.binarylogic.com.bd/checkout"
+                                  >Checkout</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="loadWebMenu">
+          <div class="main_menu_area">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12">
+                  <div class="main_menu menu_position">
+                    <nav>
+                      <ul>
+                        <li>
+                          <a
+                            title="Binary logic brands"
+                            href="https://www.binarylogic.com.bd/brands"
+                            >Our Brands</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            title="PROCESSOR"
+                            class="main_menu_new"
+                            href="https://www.binarylogic.com.bd/processor"
+                            >PROCESSOR<svg
+                              width="18px"
+                              height="18px"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                ></path>
+                              </g></svg
+                          ></a>
+                          <ul class="sub_menu">
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/intel-processor"
+                                >INTEL<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/intel-12th-gen-processor"
+                                    >12th Gen</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/13th-gen-intel-processor"
+                                    >13th Gen</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/14th-gen-intel-processor-price-in-bd"
+                                    >14th Gen</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/amd"
+                                >AMD</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            title="Server"
+                            class="main_menu_new"
+                            href="https://www.binarylogic.com.bd/server"
+                            >Server<svg
+                              width="18px"
+                              height="18px"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                ></path>
+                              </g></svg
+                          ></a>
+                          <ul class="sub_menu">
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/motherboard-server"
+                                >Motherboard Server</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/server-components"
+                                >Server Components<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/ecc-ram"
+                                    >ECC RAM</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/momentum-server"
+                                >Momentum Server</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/server-system"
+                                >Server System</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            title="Desktop PC"
+                            class="main_menu_new"
+                            href="https://www.binarylogic.com.bd/desktop-pc"
+                            >Desktop PC<svg
+                              width="18px"
+                              height="18px"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                ></path>
+                              </g></svg
+                          ></a>
+                          <ul class="sub_menu">
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/binary-pc"
+                                >BINARY PC</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/intel-nuc"
+                                >INTEL NUC</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/mini-pc-price-in-bangladesh"
+                                >MINI PC</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/gaming-pc"
+                                >Gaming PC</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/graphic-pc"
+                                >Graphic PC</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            title="Laptop"
+                            class="main_menu_new"
+                            href="https://www.binarylogic.com.bd/laptop"
+                            >Laptop<svg
+                              width="18px"
+                              height="18px"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                ></path>
+                              </g></svg
+                          ></a>
+                          <ul class="sub_menu">
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/apple"
+                                >APPLE</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/asus"
+                                >ASUS</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/acer"
+                                >ACER</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/hp-laptop"
+                                >HP<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/hp-pavilion"
+                                    >HP Pavilion</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/dell-laptop-price-in-bangladesh"
+                                >DELL</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/mi">Mi</a>
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/avita"
+                                >Avita</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/lenovo"
+                                >Lenovo</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/gigabyte"
+                                >Gigabyte</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            title="PC Component"
+                            class="main_menu_new"
+                            href="https://www.binarylogic.com.bd/pc-components"
+                            >PC Component<svg
+                              width="18px"
+                              height="18px"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                ></path>
+                              </g></svg
+                          ></a>
+                          <ul class="sub_menu">
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/ram"
+                                >RAM<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/gskill"
+                                    >G.SKILL<svg
+                                      width="20px"
+                                      height="20px"
+                                      viewBox="0 0 24 24"
+                                      id="_24x24_On_Light_Arrow-Left"
+                                      data-name="24x24/On Light/Arrow-Left"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect
+                                        id="view-box"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                      ></rect>
+                                      <path
+                                        id="Shape"
+                                        d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                                        transform="translate(14.75 17.75) rotate(180)"
+                                        fill="#141124"
+                                      ></path></svg
+                                  ></a>
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/laptop-ram"
+                                        >Laptop</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/desktop-ram"
+                                        >Desktop</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/leven"
+                                    >LEVEN</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/adata-ram"
+                                    >Adata</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/case"
+                                >CASE<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/cooler-master"
+                                    >COOLER MASTER</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/inwin"
+                                    >INWIN</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/darkflash"
+                                    >darkFlash</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/asus-pc-case"
+                                    >Asus</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/cooling"
+                                >COOLING<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/cpu-air-cooler"
+                                    >CPU Air Cooler</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/cpu-liquid-cooler"
+                                    >CPU Liquid Cooler<svg
+                                      width="20px"
+                                      height="20px"
+                                      viewBox="0 0 24 24"
+                                      id="_24x24_On_Light_Arrow-Left"
+                                      data-name="24x24/On Light/Arrow-Left"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect
+                                        id="view-box"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                      ></rect>
+                                      <path
+                                        id="Shape"
+                                        d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                                        transform="translate(14.75 17.75) rotate(180)"
+                                        fill="#141124"
+                                      ></path></svg
+                                  ></a>
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/darkflash-cpu-liquid-cooler"
+                                        >darkFlash</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/cooler-master-cpu-liquid-cooling"
+                                        >Cooler Master</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/asus-cpu-liquid-cooler"
+                                        >ASUS</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/deepcool-cpu-liquid-cooler"
+                                        >DeepCool</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/case-fan"
+                                    >Case Fan</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/data-storage"
+                                >Storage<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/hard-drive"
+                                    >Hard Drive<svg
+                                      width="20px"
+                                      height="20px"
+                                      viewBox="0 0 24 24"
+                                      id="_24x24_On_Light_Arrow-Left"
+                                      data-name="24x24/On Light/Arrow-Left"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect
+                                        id="view-box"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                      ></rect>
+                                      <path
+                                        id="Shape"
+                                        d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                                        transform="translate(14.75 17.75) rotate(180)"
+                                        fill="#141124"
+                                      ></path></svg
+                                  ></a>
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/seagate-1"
+                                        >Seagate</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/toshiba-1"
+                                        >Toshiba</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/western-digital"
+                                        >Western Digital</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/m2-ssd"
+                                    >M.2 SSD<svg
+                                      width="20px"
+                                      height="20px"
+                                      viewBox="0 0 24 24"
+                                      id="_24x24_On_Light_Arrow-Left"
+                                      data-name="24x24/On Light/Arrow-Left"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect
+                                        id="view-box"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                      ></rect>
+                                      <path
+                                        id="Shape"
+                                        d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                                        transform="translate(14.75 17.75) rotate(180)"
+                                        fill="#141124"
+                                      ></path></svg
+                                  ></a>
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/intel-1"
+                                        >Intel</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/samsung-2"
+                                        >Samsung</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/biostar-ssd-price-in-bd"
+                                        >Biostar</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/orico"
+                                        >Orico</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/leven-m-2-ssd"
+                                        >Leven</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/crucial-1"
+                                        >Crucial</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/lexar"
+                                        >Lexar</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/crucial"
+                                        >Crucial</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/biwintech"
+                                        >Biwintech</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/solid-state-drive"
+                                    >SSD<svg
+                                      width="20px"
+                                      height="20px"
+                                      viewBox="0 0 24 24"
+                                      id="_24x24_On_Light_Arrow-Left"
+                                      data-name="24x24/On Light/Arrow-Left"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect
+                                        id="view-box"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                      ></rect>
+                                      <path
+                                        id="Shape"
+                                        d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                                        transform="translate(14.75 17.75) rotate(180)"
+                                        fill="#141124"
+                                      ></path></svg
+                                  ></a>
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/samsung-ssd-price"
+                                        >Samsung</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/leven-2"
+                                        >Leven</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/biostar"
+                                        >Biostar</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/biwintech-ssd-bd"
+                                        >Biwintech</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/portable-hard-drive"
+                                    >Portable Hard Drive<svg
+                                      width="20px"
+                                      height="20px"
+                                      viewBox="0 0 24 24"
+                                      id="_24x24_On_Light_Arrow-Left"
+                                      data-name="24x24/On Light/Arrow-Left"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect
+                                        id="view-box"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                      ></rect>
+                                      <path
+                                        id="Shape"
+                                        d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                                        transform="translate(14.75 17.75) rotate(180)"
+                                        fill="#141124"
+                                      ></path></svg
+                                  ></a>
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/seagate3"
+                                        >Seagate</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/biostar-portable-hard-drive"
+                                        >Biostar</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/backup-hub"
+                                    >Backup HUB<svg
+                                      width="20px"
+                                      height="20px"
+                                      viewBox="0 0 24 24"
+                                      id="_24x24_On_Light_Arrow-Left"
+                                      data-name="24x24/On Light/Arrow-Left"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect
+                                        id="view-box"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                      ></rect>
+                                      <path
+                                        id="Shape"
+                                        d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                                        transform="translate(14.75 17.75) rotate(180)"
+                                        fill="#141124"
+                                      ></path></svg
+                                  ></a>
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.binarylogic.com.bd/seagate4"
+                                        >Seagate</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/power-supply"
+                                >Power Supply<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/power-supply-cooler-master"
+                                    >Cooler Master</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/inwin-power-supply"
+                                    >Inwin</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/aigo-power-supply-price-in-bangladesh"
+                                    >Aigo</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/graphics-card"
+                                >Graphics Card<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/leadtek"
+                                    >Leadtek</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/boistar"
+                                    >Boistar</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/his"
+                                    >HIS</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/gigabyte-graphics-card-price"
+                                    >Gigabyte</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/arktek"
+                                    >Arktek</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/nvidia"
+                                    >Nvidia</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/sparkle-gpu-price"
+                                    >Sparkle</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/keyboard-mouse"
+                                >Keyboard &amp; Mouse</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/motherboard"
+                                >Motherboard<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/gigabyte-motherboard-price"
+                                    >Gigabyte</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/asus-motherboard"
+                                    >Asus</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/asrock"
+                                    >Asrock</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/bioster-motherboard"
+                                    >Biostar</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/msi-motherboard"
+                                    >MSI</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/monitor"
+                                >Monitor<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/gigabyte-monitor-price"
+                                    >Gigabyte</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/samsung-monitor-price"
+                                    >Samsung</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/dell"
+                                    >Dell</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/asus-monitor-price"
+                                    >Asus</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/lg"
+                                    >LG</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/viewsonic"
+                                    >ViewSonic</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/hp"
+                                    >HP</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/msi-monitor"
+                                    >MSI</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/benq"
+                                    >BenQ</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/huawei-monitor-price-bd"
+                                    >Huawei</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/optane-memory"
+                                >Optane Memory</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/ups"
+                                >UPS</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/printer"
+                                >Printer</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/webcam"
+                                >Webcam</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            title="Peripheral"
+                            class="main_menu_new"
+                            href="https://www.binarylogic.com.bd/peripheral"
+                            >Peripheral<svg
+                              width="18px"
+                              height="18px"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                ></path>
+                              </g></svg
+                          ></a>
+                          <ul class="sub_menu">
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/mouse-pad"
+                                >Mouse Pad</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/power-bank"
+                                >Power Bank</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/docker-enclosure"
+                                >Docker &amp; Enclosure</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/converter"
+                                >Converter</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/cable-charger"
+                                >Cable &amp; Charger</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/surge-protector"
+                                >Surge Protector</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/headphone"
+                                >Headphone</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/usb-hub"
+                                >USB Hub</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/rgb-accessories"
+                                >RGB Accessories</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/speaker"
+                                >Speaker</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/power-station-price-in-bangladesh"
+                                >Power Station</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/graphics-tablet"
+                                >Graphics Tablet<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/wacom"
+                                    >WACOM</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/fmradio"
+                                >FM Radio</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/thermal-paste"
+                                >Thermal Paste<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/thermal-paste"
+                                    >Thermal Paste</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/pendive-price-in-bd"
+                                >Pendrive</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            title="POS Products"
+                            class="main_menu_new"
+                            href="https://www.binarylogic.com.bd/pos-products"
+                            >POS Products<svg
+                              width="18px"
+                              height="18px"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                ></path>
+                              </g></svg
+                          ></a>
+                          <ul class="sub_menu">
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/barcode-scanner"
+                                >Barcode Scanner<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/honeywell-barcode-scanner"
+                                    >Honeywell</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/zebra-barcode-scanner-price"
+                                    >Zebra</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/posiflex-barcode-scanner"
+                                    >Posiflex</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/netum-barcode-scanner"
+                                    >Netum</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/brich-barcode-scanner"
+                                    >Brich</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/sunmi-barcode-scanner"
+                                    >Sunmi</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/pos-printer"
+                                >POS Printer<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/bixolon-pos-printer"
+                                    >Bixolon</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/posiflex-pos-printer"
+                                    >Posiflex</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/rongta-pos-printer"
+                                    >Rongta</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/sunmi"
+                                    >Sunmi</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/barcode-printer"
+                                >Barcode Printer<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/bixolon-barcode-printer"
+                                    >Bixolon</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/rongta-barcode-printer"
+                                    >Rongta</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/zebra-barcode-printer"
+                                    >Zebra</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/card-printer"
+                                >Card Printer</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/pos-terminal"
+                                >POS Terminal<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/imachine-pos-terminal"
+                                    >iMachine</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/posiflex"
+                                    >Posiflex</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/sunmi-pos-terminal"
+                                    >Sunmi</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/cash-drawer"
+                                >Cash Drawer<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/kasrow-cash-drawer"
+                                    >Kasrow</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/maken-cash-drawer"
+                                    >Maken</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/money-counter"
+                                >Money Counter</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/pole-display"
+                                >Pole Display</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/kitchen-bell"
+                                >Kitchen Bell</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/weighing-scale"
+                                >Weighing Scale</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/wireless-paging-system"
+                                >Wireless Paging System</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/window-speaker-system"
+                                >Window Speaker System</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/thermal-printer"
+                                >Thermal Printer<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/posiflex-thermal-printer"
+                                    >Posiflex</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/bixolon-thermal-printer"
+                                    >Bixolon</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/pos-bank-thermal-printer"
+                                    >Pos Bank</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/rongta-thermal-printer"
+                                    >Rongta</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/unmi-thermal-receipt-printer"
+                                    >Sunmi</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/pole-mount-stand"
+                                >Pole Mount Stand</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            title="Network Zone"
+                            class="main_menu_new"
+                            href="https://www.binarylogic.com.bd/network-zone"
+                            >Network Zone<svg
+                              width="18px"
+                              height="18px"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                ></path>
+                              </g></svg
+                          ></a>
+                          <ul class="sub_menu">
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/router"
+                                >Router</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/networking-cable"
+                                >Networking Cable</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/moduler"
+                                >Moduler</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/patch-cord"
+                                >Patch Cord</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/connection-clip"
+                                >Connection Clip</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/lan-card"
+                                >Lan Card</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.binarylogic.com.bd/networking-switch"
+                                >Networking Switch</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/nas-drive"
+                                >Nas Drive<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a href="https://www.binarylogic.com.bd/qnap"
+                                    >QNAP</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a
+                            title="SOFTWARE"
+                            class="main_menu_new"
+                            href="https://www.binarylogic.com.bd/software"
+                            >SOFTWARE<svg
+                              width="18px"
+                              height="18px"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                  d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                ></path>
+                              </g></svg
+                          ></a>
+                          <ul class="sub_menu">
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/microsoft"
+                                >Microsoft<svg
+                                  width="20px"
+                                  height="20px"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <g>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                    ></path>
+                                  </g></svg
+                              ></a>
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/microsoft-office"
+                                    >OFFICE</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.binarylogic.com.bd/microsoft-operating-system"
+                                    >Operating System</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/adobe"
+                                >Adobe</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.binarylogic.com.bd/autodesk"
+                                >AutoDesk</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

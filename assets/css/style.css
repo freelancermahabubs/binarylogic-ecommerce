@@ -1703,6 +1703,117 @@ Our Brand Item start
   text-align: right;
 }
 
+/*
+====================
+login page start 
+====================
+*/
+.or-seperator {
+  margin: 50px 0 15px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+.or-seperator b {
+  padding: 0 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  background: #fff;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  position: relative;
+  top: -22px;
+  z-index: 1;
+}
+
+.account_form h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.account_form form {
+  border: 1px solid #ebebeb;
+  padding: 23px 20px 29px;
+  border-radius: 5px;
+}
+
+.account_form label {
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 12px;
+  margin-bottom: 12px;
+}
+
+.account_form label:hover {
+  color: #0063d1;
+}
+
+.account_form input {
+  border: 1px solid #ebebeb;
+  height: 40px;
+  max-width: 100%;
+  padding: 0 20px;
+  background: 0 0;
+  width: 100%;
+}
+
+.account_form button {
+  background: #0063d1;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 34px;
+  line-height: 21px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.account_form button:hover {
+  background: #242424;
+}
+
+.login_submit label input[type="checkbox"] {
+  width: 15px;
+  height: 13px;
+  margin-right: 3px;
+}
+
+.login_submit {
+  text-align: right;
+}
+
+.login_submit a {
+  font-size: 13px;
+  float: left;
+  line-height: 39px;
+}
+
+.login_submit a:hover {
+  color: #0063d1;
+}
+
+.customer_login {
+  padding-bottom: 60px;
+}
+
+.account_form p {
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 767px) {
   .p-item-up {
     flex: 0 0 50%;

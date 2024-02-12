@@ -1546,9 +1546,278 @@ Our Brand Item start
 }
 
 /*
-===================
+=============================================
+breadcrumbs_area start 
+============================================ 
+*/
+
+.breadcrumbs_area {
+  background: #f0f0f0;
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0;
+}
+
+.breadcrumb_content ul li {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-right: 3px;
+  padding-right: 13px;
+  position: relative;
+}
+
+.breadcrumb_content ul li::before {
+  position: absolute;
+  content: "/";
+  right: 0;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.breadcrumb_content ul li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumb_content ul li:last-child::before {
+  display: none;
+}
+
+.breadcrumb_content ul li a {
+  color: #999;
+}
+
+.breadcrumb_content ul li a:hover {
+  color: #0063d1;
+}
+
+/*
+=====================================
+View cart area start 
+==================================== 
+*/
+
+.table_desc {
+  border: 1px solid #ebebeb;
+  margin-bottom: 60px;
+  margin-top: 2px;
+}
+
+.table_desc .cart_page table {
+  width: 100%;
+}
+
+.table_desc .cart_page table thead tr th {
+  border-bottom: 3px solid #0063d1;
+  border-right: 1px solid #ebebeb;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 10px;
+  text-align: center;
+}
+
+.table_desc .cart_page table tbody tr td {
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  text-align: center;
+  padding: 10px;
+}
+
+.table_desc .cart_page table tbody tr td.product_remove {
+  min-width: 100px;
+}
+
+.table_desc .cart_page table tbody tr td.product_remove a {
+  font-size: 20px;
+  color: #242424;
+}
+
+.table_desc .cart_page table tbody tr td.product_remove a:hover {
+  color: #0063d1;
+}
+
+.table_desc .cart_page table tbody tr td.product_thumb {
+  max-width: 180px;
+}
+
+.table_desc .cart_page table tbody tr td.product_thumb a img {
+  width: 100px;
+}
+
+.table_desc .cart_page table tbody tr td.product_name {
+  min-width: 180px;
+}
+
+.table_desc .cart_page table tbody tr td.product_name a {
+  color: #242424;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table_desc .cart_page table tbody tr td.product_name a:hover {
+  color: #0063d1;
+}
+
+.table_desc .cart_page table tbody tr td.product-price {
+  min-width: 130px;
+  color: #242424;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.table_desc .cart_page table tbody tr td.product_quantity {
+  min-width: 180px;
+}
+
+.table_desc .cart_page table tbody tr td.product_quantity label {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.table_desc .cart_page table tbody tr td.product_quantity input {
+  width: 60px;
+  height: 40px;
+  padding: 0 5px 0 10px;
+  background: 0 0;
+  border: 1px solid #ebebeb;
+}
+
+.table_desc .cart_page table tbody tr td .product_total {
+  min-width: 120px;
+}
+
+.cart_page table thead tr:last-child th,
+.table_desc table tbody tr td:last-child {
+  border-right: 0;
+}
+tr:nth-child(even) {
+  background-color: #0063d108;
+}
+
+.cart_submit {
+  text-align: right;
+  padding: 12px;
+}
+
+.cart_submit button {
+  background: #242424;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  height: 38px;
+  line-height: 18px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+.cart_submit button:hover {
+  background: #0063d1;
+}
+
+.coupon_inner {
+  padding: 10px 20px 25px;
+}
+
+.coupon_inner p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.coupon_inner button {
+  background: #242424;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  height: 38px;
+  line-height: 18px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+
+.coupon_inner button:hover {
+  background: #0063d1;
+}
+
+.coupon_inner input {
+  border: 1px solid #ebebeb;
+  height: 42px;
+  background: 0 0;
+  padding: 0 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #242424;
+}
+
+/* .coupon_inner a {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+  border-radius: 3px;
+} */
+
+/* .coupon_inner a:hover {
+  color: #0063d1;
+} */
+
+.coupon_code {
+  border: 1px solid #ebebeb;
+}
+
+.coupon_code h3 {
+  color: #fff;
+  line-height: 36px;
+  padding: 5px 15px;
+  background: #0063d1;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cart_subtotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.cart_subtotal p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cart_subtotal p.cart_amount {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cart_subtotal p span {
+  margin-right: 30px;
+}
+
+/*
+=====================================
  Footer section start 
-================== 
+==================================== 
 */
 .footer_top {
   background: #f8f8f8;

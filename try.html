@@ -6,144 +6,239 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="Checkout_section mt-60">
-      <div class="container">
-        <form action="https://www.binarylogic.com.bd/submitOrder" method="post">
-          <input
-            type="hidden"
-            name="_token"
-            value="oa0f4q4gqwnlFKkexDx1PGoxrMYZCxxIjFgKXtSa"
-          />
-          <div class="checkout_form">
-            <div class="row">
-              <div class="col-lg-6 col-md-6">
-                <input
-                  type="hidden"
-                  class="form-control"
-                  name="total"
-                  value=""
-                />
-                <input
-                  type="hidden"
-                  class="form-control"
-                  name="CoupondiscountPrice"
-                  value=""
-                />
-                <h3>Customer Information</h3>
-                <div class="row">
-                  <div class="col-lg-6 mb-20">
-                    <label>First Name <span>*</span></label>
-                    <input
-                      type="text"
-                      name="shipping_first_name"
-                      value="s m shaown"
-                      required=""
-                    />
-                  </div>
-                  <div class="col-lg-6 mb-20">
-                    <label>Last Name </label>
-                    <input type="text" name="shipping_last_name" value="" />
-                  </div>
-                  <div class="col-lg-6 mb-20">
-                    <label>Phone Number <span>*</span></label>
-                    <input
-                      type="text"
-                      name="shipping_phone"
-                      value=""
-                      required=""
-                    />
-                  </div>
-                  <div class="col-lg-6 mb-20">
-                    <label>Email Address </label>
-                    <input
-                      type="text"
-                      name="shipping_email"
-                      value="smshaown65@gmail.com"
-                    />
-                  </div>
-                  <div class="col-lg-6 mb-20">
-                    <label>City <span>*</span></label>
-                    <input type="text" name="city" value="" required="" />
-                  </div>
-                  <div class="col-lg-6 mb-20">
-                    <label>Post Code </label>
-                    <input type="text" name="postcode" value="" />
-                  </div>
-                  <div class="col-lg-6 mb-20">
-                    <label> Delivery Address<span>*</span></label>
-                    <input type="text" name="address" value="" required="" />
-                  </div>
-                  <div class="col-6 mb-20">
-                    <label for="country">country <span>*</span></label>
-                    <select
-                      class="niceselect_option"
-                      name="country"
-                      id="country"
-                    >
-                      <option value="Bangladesh">Bangladesh</option>
-                    </select>
-                  </div>
-                  <div class="col-6 mb-20">
-                    <label for="call_time">Free for Call Time</label>
-                    <input type="datetime-local" name="call_time" required="" />
-                  </div>
-                  <div class="col-12">
-                    <div class="order-notes">
-                      <label for="order_note">Order Notes</label>
-                      <textarea
-                        id="order_note"
-                        placeholder="Notes about your order, e.g. special notes for delivery."
-                        name="message"
-                      ></textarea>
+    <div class="container">
+      <div class="profile">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="nav d-flex flex-column" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  href="#"
+                  type="button"
+                  class="nav-link active"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >Profile</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  href="#"
+                  type="button"
+                  class="nav-link"
+                  id="order-history-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#order-history"
+                  role="tab"
+                  aria-controls="order-history"
+                  aria-selected="true"
+                  >Order-history</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  href="#"
+                  type="button"
+                  class="nav-link"
+                  id="change-password-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#change-password"
+                  role="tab"
+                  aria-controls="change-password"
+                  aria-selected="false"
+                  >Change-password</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-9 mt-4 mt-md-0">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <form
+                  action="https://www.binarylogic.com.bd/update-info"
+                  method="post"
+                >
+                  <input
+                    type="hidden"
+                    name="_token"
+                    value="mLG8VmyhefIhz539cHDtQvhXRxG5a7ISZLzaHZOw"
+                  />
+                  <input type="hidden" name="user_id" value="2711" />
+                  <div class="row g-2">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        placeholder="First Name"
+                        class="form-control"
+                        value="s m shaown"
+                        name="first_name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        placeholder="Last Name"
+                        class="form-control"
+                        value=""
+                        name="last_name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <select class="form-control" name="gender">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        placeholder="Email"
+                        class="form-control"
+                        value="smshaown65@gmail.com"
+                        name="email"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        placeholder="Phone Number"
+                        class="form-control"
+                        value=""
+                        name="phone"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        placeholder="City"
+                        class="form-control"
+                        value=""
+                        name="city"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        placeholder="Post Code"
+                        class="form-control"
+                        value=""
+                        name="post_code"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        placeholder="Country"
+                        class="form-control"
+                        value=""
+                        autocomplete="off"
+                        name="country"
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <textarea class="form-control" name="address"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        class="button button-type-1"
+                        style="border: 0"
+                      >
+                        Update Your Profile
+                      </button>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <h3>Your order</h3>
-                <div class="order_table table-responsive">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Product</th>
-                        <th>Total</th>
-                      </tr>
-                    </thead>
+
+              <div
+                class="tab-pane fade"
+                id="order-history"
+                role="tabpanel"
+                aria-labelledby="order-history-tab"
+              >
+                <div class="table-responsive p-2 bg-white">
+                  <table class="table table-bordered table-hover">
                     <tbody>
                       <tr>
-                        <td>
-                          Sunmi Mini Cash Drawer NC010 For The Ultimate Solution
-                          for Cash Management<strong> × 1</strong>
-                        </td>
-                        <td>৳ 9000</td>
+                        <td class="fz-small mb-0">Invoice Id</td>
+                        <td class="fz-small mb-0">Order Date</td>
+                        <td class="fz-small mb-0">Quantity</td>
+                        <td class="text-nowrap fz-small mb-0">Total Price</td>
+                        <td class="text-nowrap fz-small mb-0">Status</td>
+                        <td class="fz-normal mb-0 text-light"></td>
                       </tr>
                     </tbody>
-                    <tfoot>
-                      <tr>
-                        <th>Cart Subtotal</th>
-                        <td>৳ 9,000.00</td>
-                      </tr>
-                      <tr>
-                        <th>Discount</th>
-                        <td>৳ 0</td>
-                      </tr>
-                      <tr class="order_total">
-                        <th>Order Total</th>
-                        <td><strong>৳ /-</strong></td>
-                      </tr>
-                    </tfoot>
                   </table>
                 </div>
-                <div class="payment_method">
-                  <div class="order_button">
-                    <button onclick="history.back()">Go Back</button>
-                    <button type="submit">Confirm Order</button>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="change-password"
+                role="tabpanel"
+                aria-labelledby="change-password-tab"
+              >
+                <form
+                  action="https://www.binarylogic.com.bd/update-password"
+                  method="post"
+                >
+                  <input
+                    type="hidden"
+                    name="_token"
+                    value="mLG8VmyhefIhz539cHDtQvhXRxG5a7ISZLzaHZOw"
+                  />
+                  <input type="hidden" name="user_id" value="2711" />
+                  <div class="row g-2">
+                    <div class="col-md-12">
+                      <input
+                        type="password"
+                        placeholder="Old Password"
+                        class="form-control"
+                        name="old_pass"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="password"
+                        placeholder="New Password"
+                        class="form-control"
+                        name="password"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="password"
+                        placeholder="New Password"
+                        class="form-control"
+                        name="password_confirmation"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        class="button button-type-1"
+                        style="border: 0"
+                      >
+                        Update Your Password
+                      </button>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </body>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Site Title -->
-    <title>Binary Logic</title>
+    <title>E-commerc</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Bootstrap -->
@@ -929,10 +929,244 @@
       </div>
     </div>
 
-    
+
 
     <!--=============== profile section start ===============-->
+      <div class="profile_area bg-white" style="padding: 80px 0px;">
+        <div class="container">
+            <div class="profile">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="nav d-flex flex-column" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a
+                        href="#"
+                        type="button"
+                        class="nav-link active"
+                        id="profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#profile"
+                        role="tab"
+                        >Profile</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        href="#"
+                        type="button"
+                        class="nav-link"
+                        id="order-history-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#order-history"
+                        role="tab"
+                        aria-controls="order-history"
+                        aria-selected="true"
+                        >Order-history</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        href="#"
+                        type="button"
+                        class="nav-link"
+                        id="change-password-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#change-password"
+                        role="tab"
+                        aria-controls="change-password"
+                        aria-selected="false"
+                        >Change-password</a
+                      >
+                    </li>
+                  </ul>
+                </div>
       
+                <div class="col-md-9 mt-4 mt-md-0">
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="profile"
+                      role="tabpanel"
+                      aria-labelledby="profile-tab"
+                    >
+                      <form
+                        action="https://www.binarylogic.com.bd/update-info"
+                        method="post"
+                      >
+                        <input
+                          type="hidden"
+                          name="_token"
+                          value="mLG8VmyhefIhz539cHDtQvhXRxG5a7ISZLzaHZOw"
+                        />
+                        <input type="hidden" name="user_id" value="2711" />
+                        <div class="row g-2">
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              placeholder="First Name"
+                              class="form-control"
+                              value="s m shaown"
+                              name="first_name"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              placeholder="Last Name"
+                              class="form-control"
+                              value=""
+                              name="last_name"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <select class="form-control" name="gender">
+                              <option value="1">Male</option>
+                              <option value="2">Female</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              placeholder="Email"
+                              class="form-control"
+                              value="smshaown65@gmail.com"
+                              name="email"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              placeholder="Phone Number"
+                              class="form-control"
+                              value=""
+                              name="phone"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              placeholder="City"
+                              class="form-control"
+                              value=""
+                              name="city"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              placeholder="Post Code"
+                              class="form-control"
+                              value=""
+                              name="post_code"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              placeholder="Country"
+                              class="form-control"
+                              value=""
+                              autocomplete="off"
+                              name="country"
+                            />
+                          </div>
+                          <div class="col-md-12">
+                            <textarea class="form-control" name="address"></textarea>
+                          </div>
+                          <div class="col-12">
+                            <button
+                              type="submit"
+                              class="button button-type-1"
+                              style="border: 0"
+                            >
+                              Update Your Profile
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+      
+                    <div
+                      class="tab-pane fade"
+                      id="order-history"
+                      role="tabpanel"
+                      aria-labelledby="order-history-tab"
+                    >
+                      <div class="table-responsive p-2 bg-white">
+                        <table class="table table-bordered table-hover">
+                          <tbody>
+                            <tr>
+                              <td class="fz-small mb-0">Invoice Id</td>
+                              <td class="fz-small mb-0">Order Date</td>
+                              <td class="fz-small mb-0">Quantity</td>
+                              <td class="text-nowrap fz-small mb-0">Total Price</td>
+                              <td class="text-nowrap fz-small mb-0">Status</td>
+                              <td class="fz-normal mb-0 text-light"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+      
+                    <div
+                      class="tab-pane fade"
+                      id="change-password"
+                      role="tabpanel"
+                      aria-labelledby="change-password-tab"
+                    >
+                      <form
+                        action="https://www.binarylogic.com.bd/update-password"
+                        method="post"
+                      >
+                        <input
+                          type="hidden"
+                          name="_token"
+                          value="mLG8VmyhefIhz539cHDtQvhXRxG5a7ISZLzaHZOw"
+                        />
+                        <input type="hidden" name="user_id" value="2711" />
+                        <div class="row g-2">
+                          <div class="col-md-12">
+                            <input
+                              type="password"
+                              placeholder="Old Password"
+                              class="form-control"
+                              name="old_pass"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <input
+                              type="password"
+                              placeholder="New Password"
+                              class="form-control"
+                              name="password"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <input
+                              type="password"
+                              placeholder="New Password"
+                              class="form-control"
+                              name="password_confirmation"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <button
+                              type="submit"
+                              class="button button-type-1"
+                              style="border: 0"
+                            >
+                              Update Your Password
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
     <!--=============== profile section end  ===============-->
 
 

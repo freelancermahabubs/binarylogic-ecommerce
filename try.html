@@ -6,240 +6,109 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="profile">
-        <div class="row">
-          <div class="col-md-3">
-            <ul class="nav d-flex flex-column" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a
-                  href="#"
-                  type="button"
-                  class="nav-link active"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#profile"
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="false"
-                  >Profile</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  href="#"
-                  type="button"
-                  class="nav-link"
-                  id="order-history-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#order-history"
-                  role="tab"
-                  aria-controls="order-history"
-                  aria-selected="true"
-                  >Order-history</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  href="#"
-                  type="button"
-                  class="nav-link"
-                  id="change-password-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#change-password"
-                  role="tab"
-                  aria-controls="change-password"
-                  aria-selected="false"
-                  >Change-password</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-9 mt-4 mt-md-0">
-            <div class="tab-content" id="myTabContent">
-              <div
-                class="tab-pane fade show active"
-                id="profile"
-                role="tabpanel"
-                aria-labelledby="profile-tab"
-              >
-                <form
-                  action="https://www.binarylogic.com.bd/update-info"
-                  method="post"
-                >
-                  <input
-                    type="hidden"
-                    name="_token"
-                    value="mLG8VmyhefIhz539cHDtQvhXRxG5a7ISZLzaHZOw"
-                  />
-                  <input type="hidden" name="user_id" value="2711" />
-                  <div class="row g-2">
-                    <div class="col-md-6">
-                      <input
-                        type="text"
-                        placeholder="First Name"
-                        class="form-control"
-                        value="s m shaown"
-                        name="first_name"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <input
-                        type="text"
-                        placeholder="Last Name"
-                        class="form-control"
-                        value=""
-                        name="last_name"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <select class="form-control" name="gender">
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                      </select>
-                    </div>
-                    <div class="col-md-6">
-                      <input
-                        type="text"
-                        placeholder="Email"
-                        class="form-control"
-                        value="smshaown65@gmail.com"
-                        name="email"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <input
-                        type="text"
-                        placeholder="Phone Number"
-                        class="form-control"
-                        value=""
-                        name="phone"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <input
-                        type="text"
-                        placeholder="City"
-                        class="form-control"
-                        value=""
-                        name="city"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <input
-                        type="text"
-                        placeholder="Post Code"
-                        class="form-control"
-                        value=""
-                        name="post_code"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <input
-                        type="text"
-                        placeholder="Country"
-                        class="form-control"
-                        value=""
-                        autocomplete="off"
-                        name="country"
-                      />
-                    </div>
-                    <div class="col-md-12">
-                      <textarea class="form-control" name="address"></textarea>
-                    </div>
-                    <div class="col-12">
-                      <button
-                        type="submit"
-                        class="button button-type-1"
-                        style="border: 0"
-                      >
-                        Update Your Profile
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-
-              <div
-                class="tab-pane fade"
-                id="order-history"
-                role="tabpanel"
-                aria-labelledby="order-history-tab"
-              >
-                <div class="table-responsive p-2 bg-white">
-                  <table class="table table-bordered table-hover">
-                    <tbody>
-                      <tr>
-                        <td class="fz-small mb-0">Invoice Id</td>
-                        <td class="fz-small mb-0">Order Date</td>
-                        <td class="fz-small mb-0">Quantity</td>
-                        <td class="text-nowrap fz-small mb-0">Total Price</td>
-                        <td class="text-nowrap fz-small mb-0">Status</td>
-                        <td class="fz-normal mb-0 text-light"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div
-                class="tab-pane fade"
-                id="change-password"
-                role="tabpanel"
-                aria-labelledby="change-password-tab"
-              >
-                <form
-                  action="https://www.binarylogic.com.bd/update-password"
-                  method="post"
-                >
-                  <input
-                    type="hidden"
-                    name="_token"
-                    value="mLG8VmyhefIhz539cHDtQvhXRxG5a7ISZLzaHZOw"
-                  />
-                  <input type="hidden" name="user_id" value="2711" />
-                  <div class="row g-2">
-                    <div class="col-md-12">
-                      <input
-                        type="password"
-                        placeholder="Old Password"
-                        class="form-control"
-                        name="old_pass"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <input
-                        type="password"
-                        placeholder="New Password"
-                        class="form-control"
-                        name="password"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <input
-                        type="password"
-                        placeholder="New Password"
-                        class="form-control"
-                        name="password_confirmation"
-                      />
-                    </div>
-                    <div class="col-12">
-                      <button
-                        type="submit"
-                        class="button button-type-1"
-                        style="border: 0"
-                      >
-                        Update Your Password
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="product_details mt-4 mb-60">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-6 col-md-6">
+      <div class="product-details-tab">
+      <div class="marquee">
+      <span style="font-size:12px;">
+      <b>অস্থিতিশীল বাজার পরিস্থিতির কারণে অর্ডার করার পূর্বে পণ্যের স্টক ও বিস্তারিত ফোন করে জেনে নিন। </b>
+      </span>
       </div>
-    </div>
+      <div class="row">
+      <div class="col-md-3 order-2 order-md-0 mt-3 mt-md-0">
+      <ul class="thumbnails">
+      <a href="https://www.binarylogic.com.bd/images/product_more_image/intel-14th-Gen-Core-i7-1.webp" title="Intel 14th Gen Core i7-14700K Desktop Processor 20 Cores 28 Threads" class="gimg">
+      <li> <img src="https://www.binarylogic.com.bd/images/product_more_image/thumb_intel-14th-Gen-Core-i7-1.webp" alt="Intel 14th Gen Core i7-14700K Desktop Processor 20 Cores 28 Threads" width="74" height="74">
+      </li>
+      </a>
+      </ul>
+      </div>
+      <div class="col-md-9 image_center">
+      <a href="https://www.binarylogic.com.bd/images/product_image/intel-14th-Gen-Core-i7.webp" class="new_image gimg" title="Intel 14th Gen Core i7-14700K Desktop Processor 20 Cores 28 Threads" data-image="https://www.binarylogic.com.bd/images/product_image/intel-14th-Gen-Core-i7.webp"><img alt="Intel 14th Gen Core i7-14700K Desktop Processor 20 Cores 28 Threads" class="width_image" src="https://www.binarylogic.com.bd/images/product_image/intel-14th-Gen-Core-i7.webp" width="400" height="400" title="Intel 14th Gen Core i7-14700K Desktop Processor 20 Cores 28 Threads"> </a>
+      <p style="font-size: 10px;text-align:center;">N.B. Image may vary with product</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+      <div class="product_d_right">
+      <form action="#">
+      <h1 style="font-size: 22px;padding-bottom: 3px;">Intel 14th Gen Core i7-14700K Desktop Processor 20 Cores 28 Threads</h1>
+      <div class="product-small-buttons">
+      <span class="button-10" role="button" style="background: green;color:white;">IN STOCK</span>
+      <span class="button-10" role="button"><span style="font-weight:bold;">Regular Price 58,400 ৳</span></span>
+      <span class="button-10" role="button" style="font-weight:bold;">Cash Price 52,500 ৳</span>
+      <span class="button-10" role="button">SKU: 46801</span>
+      <span class="button-10" role="button">Warranty: 3 Years Warranty</span>
+      <span class="button-10" role="button"><b>Home Delivery: Yes</b> </span>
+      <div class="product-small-button-hover">
+      <span class="button-10" role="button">Monthly EMI</span>
+      
+      <div class="product-small-button-hover-container" style="background: #313030;color: white;padding: 5px 10px;width: max-content;border: 3px solid #a01f1f;">
+      <span class=""> 3 Months EMI ৳ 19467 </span> <br>
+      <span class=""> 6 Months EMI ৳ 9733 </span> <br>
+      <span class=""> 9 Months EMI ৳ 6489 </span> <br>
+      <span class=""> 12 Months EMI ৳ 4867 </span> <br>
+      </div>
+      </div>
+      <br>
+      </div>
+      <h4 class="mt-3 mb-2 key_feature">Product Highlights / Key Features</h4>
+      <div class="product_desc">
+      <p style="margin: 0"><i class="fa fa-angle-right"></i> Model: i7-14700K</p>
+      <p style="margin: 0"><i class="fa fa-angle-right"></i> Socket: Intel Socket 1700</p>
+      <p style="margin: 0"><i class="fa fa-angle-right"></i> 20 Cores 28 Threads</p>
+      <p style="margin: 0"><i class="fa fa-angle-right"></i> Frequency: 3.4 GHz</p>
+      <p style="margin: 0"><i class="fa fa-angle-right"></i> Turbo Clock: up to 5.6 GHz</p>
+      <a href="#productTable" title="See Specifications of Intel 14th Gen Core i7-14700K Desktop Processor 20 Cores 28 Threads"><span class="view_details"> <b>See Specifications</b></span> </a>
+      </div>
+      <div class="product_variant quantity">
+      
+      <label>quantity</label>
+      <input type="hidden" name="_token" value="FqwRxNVLFX7pzUEeOYQxl1yiGmZHIoX9KMfFFGJV"> <input type="number" class="qty" min="1" value="1" name="qty">
+      <input type="hidden" name="product_id" value="1513">
+      <button class="button AddToCart" data-id="1513" type="button">add to cart</button>
+      
+      <form action="https://www.binarylogic.com.bd/cart-page" method="POST" "="">
+      <input type="hidden" name="_token" value="FqwRxNVLFX7pzUEeOYQxl1yiGmZHIoX9KMfFFGJV"> <input type="hidden" min="1" value="1513" class="fz-normal" name="product_id">
+      <input type="hidden" min="1" value="1" class="fz-normal" name="qty">
+      <button class="button" data-id="1513" type="submit">Buy Now</button>
+      
+      </form>
+      <form action="https://www.binarylogic.com.bd/print-product" method="POST">
+      <input type="hidden" name="_token" value="FqwRxNVLFX7pzUEeOYQxl1yiGmZHIoX9KMfFFGJV"> <input type="hidden" value="1513" class="fz-normal" name="product_id">
+      <button type="submit" target="_blank" class="button border btn rounded-0 theme-bg text-white">Print</button>
+      </form>
+      </div></form>
+      
+      <div class="priduct_social mt-3">
+      <div class="row">
+      <div class="col-md-7 col-6">
+      <div class="sharethis-inline-share-buttons st-left  st-inline-share-buttons st-animated" id="st-1"><div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+        <img alt="facebook sharing button" src="https://platform-cdn.sharethis.com/img/facebook.svg">
+        
+      </div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+        <img alt="twitter sharing button" src="https://platform-cdn.sharethis.com/img/twitter.svg">
+        
+      </div><div class="st-btn" data-network="pinterest" style="display: inline-block;">
+        <img alt="pinterest sharing button" src="https://platform-cdn.sharethis.com/img/pinterest.svg">
+        
+      </div><div class="st-btn" data-network="email" style="display: inline-block;">
+        <img alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg">
+        
+      </div><div class="st-btn st-last" data-network="sharethis" style="display: inline-block;">
+        <img alt="sharethis sharing button" src="https://platform-cdn.sharethis.com/img/sharethis.svg">
+        
+      </div></div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
   </body>
 </html>

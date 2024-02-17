@@ -1240,7 +1240,7 @@ Banner Start
 }
 
 .ad_boximg {
-  width: 306px;
+  width: 100%;
   height: 255px;
   object-fit: cover;
 }
@@ -3555,6 +3555,49 @@ th {
   margin-bottom: 8px;
 }
 
+/* mobile menu stat  */
+.offcanvas_main_menu > li.menu-item-has-children.menu-open > span.menu-expand {
+  transform: rotate(180deg);
+}
+
+.offcanvas_main_menu
+  > li
+  ul
+  li.menu-item-has-children.menu-open
+  span.menu-expand {
+  transform: rotate(180deg);
+}
+
+.offcanvas_main_menu li {
+  position: relative;
+}
+
+.offcanvas_main_menu li:last-child {
+  margin: 0;
+}
+
+.offcanvas_main_menu li span.menu-expand {
+  position: absolute;
+  right: 0;
+}
+
+.offcanvas_main_menu li a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.offcanvas_main_menu li a:hover {
+  color: #0063d1;
+}
+
+.offcanvas_main_menu li ul.sub-menu {
+  padding-left: 20px;
+}
 
 @media only screen and (max-width: 767px) {
   .featured_container .product_content {

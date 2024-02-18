@@ -3599,6 +3599,45 @@ th {
   padding-left: 20px;
 }
 
+.footer-fixed-mobile-menu-wrapper {
+  /* background: #fff; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 999;
+  box-shadow: 0 0 4px 0 #8080804f;
+  display: none;
+}
+
+.footer-fixed-mobile-menu-wrapper ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.footer-fixed-mobile-menu-wrapper a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.footer-fixed-mobile-menu-wrapper i {
+  font-size: 20px;
+  color: white;
+}
+
+.footer-fixed-mobile-menu-wrapper span {
+  font-size: 13px;
+}
+
+/* .offcanvas footer start  */
+
 @media only screen and (max-width: 767px) {
   .featured_container .product_content {
     float: left !important;
@@ -3631,6 +3670,104 @@ th {
   .p-item-up {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .support_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .top_right {
+    text-align: center !important;
+    margin-bottom: 16px;
+    text-align: left !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .Offcanvas_footer {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .Offcanvas_footer span a {
+    font-size: 14px;
+  }
+
+  .Offcanvas_footer span a:hover {
+    color: #0063d1;
+  }
+
+  .Offcanvas_footer ul {
+    margin-top: 20px;
+  }
+
+  .Offcanvas_footer ul li {
+    display: inline-block;
+    margin-right: 4px;
+  }
+
+  .Offcanvas_footer ul li:last-child {
+    margin-right: 0;
+  }
+
+  .Offcanvas_footer ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  .Offcanvas_footer ul li.facebook a {
+    background: #3c5b9b;
+  }
+
+  .Offcanvas_footer ul li.facebook a:hover {
+    background: #0063d1;
+  }
+
+  .Offcanvas_footer ul li.twitter a {
+    background: #1da1f2;
+  }
+
+  .Offcanvas_footer ul li.twitter a:hover {
+    background: #0063d1;
+  }
+
+  .Offcanvas_footer ul li.pinterest a {
+    background: #bd081b;
+  }
+
+  .Offcanvas_footer ul li.pinterest a:hover {
+    background: #0063d1;
+  }
+
+  .Offcanvas_footer ul li.google-plus a {
+    background: #dd4d42;
+  }
+
+  .Offcanvas_footer ul li.google-plus a:hover {
+    background: #0063d1;
+  }
+
+  .Offcanvas_footer ul li.linkedin a {
+    background: #010103;
+  }
+
+  .Offcanvas_footer ul li.linkedin a:hover {
+    background: #0063d1;
+  }
+  .arrival_thumb {
+    width: 15% !important;
+  }
+
+  .footer-fixed-mobile-menu-wrapper {
+    display: block;
+    background: #0063d1 !important;
+    color: #fff !important;
   }
 }
 

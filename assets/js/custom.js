@@ -31,13 +31,11 @@
 
 
   // mobile sub menu toggle code 
-  const menuItems = document.querySelectorAll('.menu-item-has-children');
-  
-  menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const submenu = item.querySelector('.sub-menu');
-      if (submenu) {
-        submenu.style.display = (submenu.style.display === 'none' || submenu.style.display === '') ? 'block' : 'none';
-      }
-    });
-  });
+  function toggleSubMenu(subMenuId) {
+    var subMenu = document.getElementById(subMenuId);
+    if (subMenu.style.display === 'block') {
+        subMenu.style.display = 'none';
+    } else {
+        subMenu.style.display = 'block';
+    }
+  }  

@@ -3556,7 +3556,7 @@ th {
 }
 
 /* mobile menu stat  */
-.offcanvas_main_menu > li.menu-item-has-children.menu-open > span.menu-expand {
+/* .offcanvas_main_menu > li.menu-item-has-children.menu-open > span.menu-expand {
   transform: rotate(180deg);
 }
 
@@ -3566,7 +3566,7 @@ th {
   li.menu-item-has-children.menu-open
   span.menu-expand {
   transform: rotate(180deg);
-}
+} */
 
 .offcanvas_main_menu li {
   position: relative;
@@ -3622,6 +3622,7 @@ th {
   .search_container_form {
     width: 100%;
     margin-top: 15px;
+    margin-right: 0px !important;
   }
   .ad_boximg {
     width: 100%;

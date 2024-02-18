@@ -252,7 +252,7 @@
         </div>
         <!--=================== Header Middle  end =================== -->
         <!--=================== Men menu start =================== -->
-        <div id="loadWebMenu">
+        <div id="loadWebMenu" class="d-none d-md-block">
           <div class="main_menu_area">
             <div class="container">
               <div class="row align-items-center">
@@ -2640,16 +2640,16 @@
                 </li>
                 <li class="menu-item-has-children">
                   <span class="menu-expand">
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i  onclick="toggleSubMenu('processor_submenu')" class="fa-solid fa-angle-down"></i>
                   </span>
                   <a href="processor">PROCESSOR</a>
-                  <ul class="sub-menu" style="display: none">
+                  <ul id="processor_submenu" class="sub-menu" style="display: none">
                     <li class="menu-item-has-children menu-open">
                       <span class="menu-expand">
-                         <i class="fa-solid fa-angle-down"></i>
+                         <i  onclick="toggleSubMenu('INTEL')" class="fa-solid fa-angle-down"></i>
                       </span>
                       <a href="intel-processor"> INTEL</a>
-                      <ul class="sub-menu" style="display: none;">
+                      <ul id="INTEL" class="sub-menu" style="display: none;">
                         <li><a href=" intel-12th-gen-processor">12th Gen</a></li>
                         <li><a href=" 13th-gen-intel-processor">13th Gen</a></li>
                         <li>
@@ -2658,181 +2658,121 @@
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                      <a href="amd"> AMD</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      <a href="amd"> AMD</a>                      
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
-                  <span class="menu-expand">
-                    <i class="fa-solid fa-angle-down"></i>
+                  <span class="menu-expand"  onclick="toggleSubMenu('Server')">
+                    <i  class="fa-solid fa-angle-down"></i>
                  </span>
                  
                  <a href="server">Server</a>
-                  <ul class="sub-menu" style="display: none">
-                    <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
+                  <ul id="Server" class="sub-menu" style="display: none">
+                    <li class="menu-item-has-children">                    
                      <a href="motherboard-server"> Motherboard Server</a>
-                      <ul class="sub-menu" style="display: none"></ul>
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('Server-components')"  class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="server-components"> Server Components</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="Server-components" class="sub-menu" style="display: none">
                         <li><a href=" ecc-ram">ECC RAM</a></li>
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="momentum-server"> Momentum Server</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="momentum-server"> Momentum Server</a>                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="server-system"> Server System</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="server-system"> Server System</a>                      
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
                   <span class="menu-expand">
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i onclick="toggleSubMenu('Desktop-PC')" class="fa-solid fa-angle-down"></i>
                  </span>
                  <a href="desktop-pc">Desktop PC</a>
-                  <ul class="sub-menu" style="display: none">
+                  <ul id="Desktop-PC" class="sub-menu" style="display: none">
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="binary-pc"> BINARY PC</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="binary-pc"> BINARY PC</a>                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="intel-nuc"> INTEL NUC</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="intel-nuc"> INTEL NUC</a>                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="mini-pc-price-in-bangladesh"> MINI PC</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="mini-pc-price-in-bangladesh"> MINI PC</a>                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="gaming-pc"> Gaming PC</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="gaming-pc"> Gaming PC</a>                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="graphic-pc"> Graphic PC</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="graphic-pc"> Graphic PC</a>                      
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
                   <span class="menu-expand">
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i onclick="toggleSubMenu('laptop')" class="fa-solid fa-angle-down"></i>
                  </span>
                  <a href="laptop">Laptop</a>
-                  <ul class="sub-menu" style="display: none">
+                  <ul id="laptop" class="sub-menu" style="display: none">
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="apple"> APPLE</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="asus"> ASUS</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="acer"> ACER</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('hp')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="hp-laptop"> HP</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="hp" class="sub-menu" style="display: none">
                         <li><a href=" hp-pavilion">HP Pavilion</a></li>
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="dell-laptop-price-in-bangladesh"> DELL</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="mi"> Mi</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="avita"> Avita</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="lenovo"> Lenovo</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="gigabyte"> Gigabyte</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
                   <span class="menu-expand">
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i onclick="toggleSubMenu('PC_component')" class="fa-solid fa-angle-down"></i>
                  </span>
                  <a href="pc-components">PC Component</a>
-                  <ul class="sub-menu" style="display: none">
+                  <ul id="PC_component" class="sub-menu" style="display: none">
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('RAM')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="ram"> RAM</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="RAM" class="sub-menu" style="display: none">
                         <li><a href=" gskill">G.SKILL</a></li>
                         <li><a href=" leven">LEVEN</a></li>
                         <li><a href=" adata-ram">Adata</a></li>
@@ -2840,10 +2780,10 @@
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('case')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="case"> CASE</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="case" class="sub-menu" style="display: none">
                         <li><a href=" cooler-master">COOLER MASTER</a></li>
                         <li><a href=" inwin">INWIN</a></li>
                         <li><a href=" darkflash">darkFlash</a></li>
@@ -2852,10 +2792,10 @@
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('cooling')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="cooling"> COOLING</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="cooling" class="sub-menu" style="display: none">
                         <li><a href=" cpu-air-cooler">CPU Air Cooler</a></li>
                         <li><a href=" cpu-liquid-cooler">CPU Liquid Cooler</a></li>
                         <li><a href=" case-fan">Case Fan</a></li>
@@ -2863,10 +2803,10 @@
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('storage')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="#"> Storage</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="storage" class="sub-menu" style="display: none">
                         <li><a href=" hard-drive">Hard Drive</a></li>
                         <li><a href=" m2-ssd">M.2 SSD</a></li>
                         <li><a href=" solid-state-drive">SSD</a></li>
@@ -2878,10 +2818,10 @@
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('power-supply')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="power-supply"> Power Supply</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="power-supply" class="sub-menu" style="display: none">
                         <li>
                           <a href=" power-supply-cooler-master">Cooler Master</a>
                         </li>
@@ -2893,10 +2833,10 @@
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('graphic-pc')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="graphics-card"> Graphics Card</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="graphic-pc" class="sub-menu" style="display: none">
                         <li><a href=" leadtek">Leadtek</a></li>
                         <li><a href=" boistar">Boistar</a></li>
                         <li><a href=" his">HIS</a></li>
@@ -2907,18 +2847,14 @@
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="keyboard-mouse"> Keyboard &amp; Mouse</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="keyboard-mouse"> Keyboard &amp; Mouse</a>                      
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('motherboard')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="motherboard"> Motherboard</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="motherboard" class="sub-menu" style="display: none">
                         <li><a href=" gigabyte-motherboard-price">Gigabyte</a></li>
                         <li><a href=" asus-motherboard">Asus</a></li>
                         <li><a href=" asrock">Asrock</a></li>
@@ -2928,10 +2864,10 @@
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('monitor')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="monitor"> Monitor</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="monitor" class="sub-menu" style="display: none">
                         <li><a href=" gigabyte-monitor-price">Gigabyte</a></li>
                         <li><a href=" samsung-monitor-price">Samsung</a></li>
                         <li><a href=" dell">Dell</a></li>
@@ -2945,164 +2881,115 @@
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="optane-memory"> Optane Memory</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
+ 
                      <a href="ups"> UPS</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
+                    
                      <a href="printer"> Printer</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
+                  
                      <a href="webcam"> Webcam</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
                   <span class="menu-expand">
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i onclick="toggleSubMenu('peripheral')" class="fa-solid fa-angle-down"></i>
                  </span>
                  <a href="peripheral">Peripheral</a>
-                  <ul class="sub-menu" style="display: none">
+                  <ul id="peripheral" class="sub-menu" style="display: none">
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="mouse-pad"> Mouse Pad</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="power-bank"> Power Bank</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="docker-enclosure"> Docker &amp; Enclosure</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="converter"> Converter</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="cable-charger"> Cable &amp; Charger</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="surge-protector"> Surge Protector</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="headphone"> Headphone</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="usb-hub"> USB Hub</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="rgb-accessories"> RGB Accessories</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="speaker"> Speaker</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="power-station-price-in-bangladesh"> Power Station</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('graphices-tablet')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="graphics-tablet"> Graphics Tablet</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="graphices-tablet" class="sub-menu" style="display: none">
                         <li><a href=" wacom">WACOM</a></li>
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="fmradio"> FM Radio</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('thermal')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="thermal-paste"> Thermal Paste</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="thermal" class="sub-menu" style="display: none">
                         <li><a href=" thermal-paste">Thermal Paste</a></li>
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="pendive-price-in-bd"> Pendrive</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="pendive-price-in-bd"> Pendrive</a>                      
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
                   <span class="menu-expand">
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i onclick="toggleSubMenu('pos-products')" class="fa-solid fa-angle-down"></i>
                  </span>
                  <a href="pos-products">POS Products</a>
-                  <ul class="sub-menu" style="display: none">
+                  <ul id="pos-products" class="sub-menu" style="display: none">
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('barcode-scanner')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="barcode-scanner"> Barcode Scanner</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="barcode-scanner" class="sub-menu" style="display: none">
                         <li><a href=" honeywell-barcode-scanner">Honeywell</a></li>
                         <li><a href=" zebra-barcode-scanner-price">Zebra</a></li>
                         <li><a href=" posiflex-barcode-scanner">Posiflex</a></li>
@@ -3113,10 +3000,10 @@
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('pos-printer')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="pos-printer"> POS Printer</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="pos-printer" class="sub-menu" style="display: none">
                         <li><a href=" bixolon-pos-printer">Bixolon</a></li>
                         <li><a href=" posiflex-pos-printer">Posiflex</a></li>
                         <li><a href=" rongta-pos-printer">Rongta</a></li>
@@ -3125,28 +3012,24 @@
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('barcode-printer')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="barcode-printer"> Barcode Printer</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="barcode-printer" class="sub-menu" style="display: none">
                         <li><a href=" bixolon-barcode-printer">Bixolon</a></li>
                         <li><a href=" rongta-barcode-printer">Rongta</a></li>
                         <li><a href=" zebra-barcode-printer">Zebra</a></li>
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="card-printer"> Card Printer</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="card-printer"> Card Printer</a>                      
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('pos-terminal')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="pos-terminal"> POS Terminal</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="pos-terminal" class="sub-menu" style="display: none">
                         <li><a href=" imachine-pos-terminal">iMachine</a></li>
                         <li><a href=" posiflex">Posiflex</a></li>
                         <li><a href=" sunmi-pos-terminal">Sunmi</a></li>
@@ -3154,62 +3037,44 @@
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('cash-drawer')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="cash-drawer"> Cash Drawer</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="cash-drawer" class="sub-menu" style="display: none">
                         <li><a href=" kasrow-cash-drawer">Kasrow</a></li>
                         <li><a href=" maken-cash-drawer">Maken</a></li>
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="money-counter"> Money Counter</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="pole-display"> Pole Display</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="kitchen-bell"> Kitchen Bell</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="weighing-scale"> Weighing Scale</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="wireless-paging-system"> Wireless Paging System</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="window-speaker-system"> Window Speaker System</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('thermal-printer')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="thermal-printer"> Thermal Printer</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="thermal-printer" class="sub-menu" style="display: none">
                         <li><a href=" posiflex-thermal-printer">Posiflex</a></li>
                         <li><a href=" bixolon-thermal-printer">Bixolon</a></li>
                         <li><a href=" pos-bank-thermal-printer">Pos Bank</a></li>
@@ -3218,75 +3083,49 @@
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="pole-mount-stand"> Pole Mount Stand</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
                   <span class="menu-expand">
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i onclick="toggleSubMenu('network-zone')" class="fa-solid fa-angle-down"></i>
                  </span>
                  <a href="network-zone">Network Zone</a>
-                  <ul class="sub-menu" style="display: none">
+                  <ul id="network-zone" class="sub-menu" style="display: none">
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="router"> Router</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="router"> Router</a>                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
-                     <a href="networking-cable"> Networking Cable</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                     <a href="networking-cable"> Networking Cable</a>                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="moduler"> Moduler</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="patch-cord"> Patch Cord</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="connection-clip"> Connection Clip</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="lan-card"> Lan Card</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="networking-switch"> Networking Switch</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('nas-drive')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="nas-drive"> Nas Drive</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="nas-drive" class="sub-menu" style="display: none">
                         <li><a href=" qnap">QNAP</a></li>
                       </ul>
                     </li>
@@ -3294,16 +3133,16 @@
                 </li>
                 <li class="menu-item-has-children">
                   <span class="menu-expand">
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i onclick="toggleSubMenu('software')" class="fa-solid fa-angle-down"></i>
                  </span>
                  <a href="software">SOFTWARE</a>
-                  <ul class="sub-menu" style="display: none">
+                  <ul id="software" class="sub-menu" style="display: none">
                     <li class="menu-item-has-children">
                       <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i onclick="toggleSubMenu('microsoft')" class="fa-solid fa-angle-down"></i>
                      </span>
                      <a href="microsoft"> Microsoft</a>
-                      <ul class="sub-menu" style="display: none">
+                      <ul id="microsoft" class="sub-menu" style="display: none">
                         <li><a href=" microsoft-office">OFFICE</a></li>
                         <li>
                           <a href=" microsoft-operating-system">Operating System</a>
@@ -3311,18 +3150,12 @@
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="adobe"> Adobe</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                     <li class="menu-item-has-children">
-                      <span class="menu-expand">
-                        <i class="fa-solid fa-angle-down"></i>
-                     </span>
                      <a href="autodesk"> AutoDesk</a>
-                      <ul class="sub-menu" style="display: none"></ul>
+                      
                     </li>
                   </ul>
                 </li>

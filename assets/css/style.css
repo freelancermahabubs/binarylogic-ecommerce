@@ -1284,6 +1284,9 @@ Banner Start
 .box_s a:hover {
   color: var(--hover);
 }
+.checkout {
+  border: 1px solid #ddd;
+}
 
 /*
 ========================
@@ -3641,6 +3644,100 @@ th {
 .footer-fixed-mobile-menu-wrapper span {
   font-size: 13px;
   color: #fff;
+}
+
+/*
+===============================
+fixed_product_cart_header 
+===============================
+*/
+
+.cart_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 10px;
+}
+.item_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.item_info h4 {
+  font-family: var(--fontPoppins);
+  font-size: 16px;
+  font-weight: 600;
+}
+.close_icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+.fixed_product_cart_body,
+.fixed_product_cart_footer {
+  padding: 0px 10px;
+}
+
+.fixed_product_cart_footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px 16px;
+  /* background-color: #f5f6f7; */
+  border-top: 1px solid #6b7280;
+}
+
+.fixed_product_cart_footer h6 {
+  font-size: 14px;
+  color: #6b7280;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.cart_checkout_btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: capitalize;
+  background-color: var(--primary_color);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  margin-top: 8px;
+}
+.subtotal_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.subtotal_container h4 {
+  font-size: 20px;
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+}
+.more_shopping {
+  text-align: center;
+}
+.more_shopping span {
+  color: #6366f1;
+  cursor: pointer;
+  font-family: var(--fontPoppins);
+  font-size: 14px;
+  margin-top: 3px;
+  display: block;
 }
 
 /* .offcanvas footer start  */

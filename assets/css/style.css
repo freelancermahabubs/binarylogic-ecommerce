@@ -1408,6 +1408,11 @@ Featured Product Area
   float: left;
 }
 
+.featured_container .cls_image_l img {
+  width: 100%;
+  height: 100%;
+}
+
 .single_product .product_content {
   padding-left: 18px;
   margin-top: 0;
@@ -1480,6 +1485,7 @@ New Arrival Product start
   min-height: 81px;
 }
 .arrival_thumb img {
+  width: 100%;
   height: 81px;
 }
 .arrival_content {
@@ -3634,6 +3640,7 @@ th {
 
 .footer-fixed-mobile-menu-wrapper span {
   font-size: 13px;
+  color: #fff;
 }
 
 /* .offcanvas footer start  */
@@ -3761,7 +3768,7 @@ th {
     background: #0063d1;
   }
   .arrival_thumb {
-    width: 15% !important;
+    width: 25% !important;
   }
 
   .footer-fixed-mobile-menu-wrapper {
